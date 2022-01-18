@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Main Page Fcs</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    .fakeimg {
+      height: 200px;
+      width: 363px;
+      background: #aaa;
+    }
+
+    .pageimage {
+
+      height: 250px;
+      width: 454px;
+      background: #aaa;
+    }
+
+    .container-fluid {
+      background: #DFF0D8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Adding Background Colour and text at TOP -->
+  <div class=" bg-info jumbotron text-center " style="margin-bottom:0">
+
+    <h1 class="font-weight-bold">Welcome On Friend Recommendation System</h1>
+
+    <p class="font-weight-bold">There is lot to Explore For you!!</p>
+  </div>
+
+  <!-- End Of Adding Background  Top  -->
+
+  <!-- Navigation Bar Starts -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Explore!</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">My Friends</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Recommendations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Log Out</a>
+        </li>
+        <li class="nav-item">
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Discover More!
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Health/Fitness</a></li>
+              <li><a class="dropdown-item" href="#">Sports</a></li>
+              <li><a class="dropdown-item" href="#">Education</a></li>
+              <li><a class="dropdown-item" href="#">Entertainment</a></li>
+            </ul>
+          </div>
+
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Navigation Bar Ends -->
+
+  <!-- Main Page -->
+
+  <div class="container-fluid" style="margin-top:30px">
+    <div class="row">
+      <div class="col-sm-4">
+        <h2>About Me</h2>
+        <h5>Photo of me:</h5>
+        <div class="fakeimg">
+          <img src="profileimage.jpg"> <!-- Adding Profile Image -->
+        </div>
+        <p class="font-weight-bold">It's great to be here. Connect with me. </p>
+        <h3>Some Links</h3>
+        <p class="font-weight-bold">Know more about me.</p>
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Interests</a>
+          </li>
+          <!-- <li class="nav-item"> 
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>-->
+        </ul>
+        <hr class="d-sm-none">
+      </div>
+      <div class="col-sm-8">
+        <h2 class="font-weight-bold">Hii!! There</h2>
+        <h5 class="font-weight-bold">Let's Connect</h5>
+        <div class="pageimage">
+          <img src="Images\Home.png" class="img-fluid" alt="Resposive image">
+        </div>
+        <p class="font-weight-bold">.Some more brief..</p>
+        <p class="text-light bg-dark">We developed an algorithm that analyses the sub-graph composed by a user and all
+          the others connected people separately by three degree of separation. However, only users separated by two
+          degree of separation are candidates to be suggested as a friend. .</p>
+        <br>
+        <h2 class="font-weight-bold">Get Recommendations</h2>
+        <h5>Turn Your Interests Into FriendShip</h5>
+        <div class="pageimage">
+          <img src="Images\Home2.png">
+        </div>
+        <p class="font-weight-bold">Know More About Connections..</p>
+        <p class="text-light bg-dark">The proposed system measures the similarity of Interets between users, and
+          recommends friends to users if their Interests have high similarity</p>
+      </div>
+    </div>
+  </div>
+  <!-- End Of Main Page -->
+
+  <!-- Footer Begins -->
+  <div class="jumbotron text-center" style="margin-bottom:0">
+
+    <!-- <footer class="page-footer font-small blue fixed-bottom"> -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2021 Design ProjectCopyright:
+      <a href="https://mdbootstrap.com/"> FcsTeam</a>
+    </div>
+    <!-- Copyright -->
+
+    <!-- </footer> -->
+
+  </div>
+  <!-- FOOTER ENDS -->
+
+  <!-- JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

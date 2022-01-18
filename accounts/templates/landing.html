@@ -1,0 +1,167 @@
+
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend Recommendation System</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- me -->   
+</head>
+<body>
+<!-- STYLE -->
+<style type="text/css"> 
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+  .btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Green */
+.success {
+  border-color: #04AA6D;
+  color: green;
+}
+
+label{
+  font-weight:bold;
+  padding: 4px;
+  text-transform: uppercase;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  
+}
+
+
+</style>
+<!-- END OF STYLE -->
+
+
+
+<!--HEADER/ NAVIGATION BAR STARTS -->
+
+    <header class="text-gray-400 bg-gray-900 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+     <img src="https://img.icons8.com/color/50/000000/graph-clique.png"/>
+      <span class="ml-3 text-xl">Friend Recommendation System</span>
+    </a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <a href="#" class="mr-5 hover:text-white">Home</a>
+      <a href='#About'class="mr-5 hover:text-white">About Us</a>
+      <a href="{% url 'form' %}" class="mr-5 hover:text-white">Contact</a>
+      <a href='#About'class="mr-5 hover:text-white">Project</a>
+       <div class="p-10">
+
+<!--Dropdown Starts  -->
+  <!-- <div class="dropdown inline-block relative"> -->
+    <!-- <button class="bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center"> -->
+      <!-- <span class="mr-1">Discover more!</span> -->
+      <!-- <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> -->
+    <!-- </button> -->
+    <!-- <ul class="dropdown-menu absolute hidden text-gray-700 pt-1"> -->
+      <!-- <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Sports</a></li> -->
+      <!-- <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Health</a></li> -->
+      <!-- <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Education</a></li> -->
+    <!-- </ul> -->
+  <!-- </div> -->
+<!-- </div> -->
+
+    <!-- Dropdown ends -->
+
+
+    </nav>
+  </div>
+</header>
+
+<!-- END OF HEADER -->
+
+
+<!-- HERO CLASS -->
+
+
+    <section class="text-gray-400 bg-gray-900 body-font">
+      <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Turn Your Interests
+            <br class="hidden lg:inline-block">Into FriendShip
+          </h1>
+          <p class="mb-8 leading-relaxed">We welcome you all on our page, Explore us more by connecting us.Here, we are connecting you with your friends on the basis of your interests.This is more than a fun so Connect with us and Increase your Interests </p>
+          <div class="flex justify-center">
+             <!-- <button class="inline-flex text-white bg-indigo-600 border-0 py-2 px-6 focus:outline-nsone hover:bg-indigo-600 rounded text-lg">Login</button> -->
+             <a class="btn" href="{% url 'login_attempt'%}">LogIn</a> 
+             <a class="btn" href="{% url 'register_attempt'%}">SignUp</a> 
+            <!-- <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Sign up</button> -->
+          </div>
+        </div>
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <img class="object-cover object-center rounded" alt="hero" src="{% static 'images\front.png' %}">
+        </div>
+      </div>
+    </section>
+
+<!-- end of hero class -->
+
+
+<!-- ABOUT US -->
+
+<section class="text-gray-400 bg-gray-900 body-font" id="About">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-500 mb-8" viewBox="0 0 975.036 975.036">
+        <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+      </svg>
+      <p class="leading-relaxed text-lg">A social network is composed by communities of individuals or organizations that are connected by a common interest.Here, we propose a friend recommendation system for social network based on the topology of the network graphs.<br>The Underlined Project is a group project.Our Team has 4 members who work altogether to make this project successfull. Although you can connect with us by filling form given in case of any issues about Project.</p>
+      <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+      <h2 class="text-white font-medium title-font tracking-wider text-sm">FCS Team</h2>
+      
+    </div>
+  </div>
+</section>
+
+ <!--END OF ABOUT --> 
+
+
+
+<!-- START OF CONTACT US PAGE -->
+
+
+
+    <!-- <div class="lg:w-1/2 md:w-2/3 mx-auto">
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="name" class="leading-7 text-sm text-white-900">Name</label>
+            <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="email" class="leading-7 text-sm text-white-900">Email</label>
+            <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div> -->
+
+
+
+
+
+
+<!-- END OF CONTACT US PAGE -->
+
+
+
+<!-- SCRIPT -->
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+<!-- END OF SCRIPT -->
+</body>
+
+</html>
